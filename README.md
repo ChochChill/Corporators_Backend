@@ -10,7 +10,7 @@ This Repository Handles Backend for Corporator's Application
 6. Complaints (Verion 2)
 
 
-## 1. Auth and Authrization  (Apoorva's Headache)
+## 1. Auth and Authrization  
 
 - ## Schema 
   - ### Auth User Schema
@@ -29,7 +29,7 @@ This Repository Handles Backend for Corporator's Application
     
 
 - ## API's 
-    - ### Lets just do it according to what we did for babu sir's backend (Apoorva Handle it)
+    - ### Lets just do it according to what we did for College App backend 
 
 - ## Databases
   - Mongo DB and Firebase.
