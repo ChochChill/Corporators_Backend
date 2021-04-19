@@ -1,22 +1,23 @@
 # Corporator's Backend
 This Repository Handles Backend for Corporator's Application
 
+
 # Services 
 1. Auth and Authrization 
 2. News Feed 
 3. Volunteer 
 4. Admin 
 5. User 
-6. Complaints (Verion 2)
+6. Complaints
 
 
-## 1. Auth and Authrization  
+## 1. Auth and Authrization  (Apoorva's Headache)
 
 - ## Schema 
   - ### Auth User Schema
     - 1. Name 
     - 2. Phone Number 
-    - 3. Password
+    - 3. OTP 
     - 4. Clearance Level 
     The Phone Number and Password are as usual followed Clearance Level 
     If the level is 
@@ -24,19 +25,14 @@ This Repository Handles Backend for Corporator's Application
         2. Its a Volunteer
         3. Its a Admin 
     The Numbers might change if wanted to be 
-    The Token is only valid for a week or maybe be two weeks if there is a change of auto re-verfication then the API should automatically do the work like update the token on its own.
-    If want be we can eliminate the use of password and use OTP insted. Using Firebase.
+    Use of OTP insted. Using Firebase.
     
 
 - ## API's 
-    - ### Lets just do it according to what we did for College App backend 
+    - ### Lets just do it according to what we did for babu sir's backend (Apoorva Handle it)
 
 - ## Databases
   - Mongo DB and Firebase.
-    <!---
-    Something to add for the above line is that the primary is has to be verified from a SQL Database so Apoorva look into it how to fetch a key from SQL to Mongo DB 
-    wait we can just pass it inside some header of the API as some random shit. maybe look into it 
-    -->
 
 ## 2. News Feed ()
 
@@ -69,16 +65,14 @@ This Repository Handles Backend for Corporator's Application
     - 1. _ID - INT
     - 2. First Name - Varchar(255)
     - 3. Last Name - Varchar(255)
-    - 4. Phone Number - BIG INT
+    - 4. Phone Number - BIG INT - Unique 
     - 5. Email - Varchar(255)
     - 6. DOB - DATE 
-    - 7. Voter ID (Candidate Key) - Varchar(255)
+    - 7. Voter ID (Candidate Key) - Varchar(255) 
     - 8. Aadhar Number - BIG INT
     - 9. Addtional Family Member (For Family) - INT (This May have 5 columns if there are more than 5 member in the family then we split the data into two or more parts)
-    - 10. Volunteer_ID - INT
-     <!---
-     So the Question is what if there are 5 Members in the Family and how would you add their primary key to this foregin key as we would have 5 columns to store that keys so Apoorva can you please find the solution to this... try to normalize the data here.
-     ---> 
+    - 10. Relationship - Varchar(255) 
+    - 11. Volunteer_ID - INT
 
 - ## API's
   - ### GET Requests 
@@ -90,7 +84,6 @@ This Repository Handles Backend for Corporator's Application
     - 1. /volunteer/update{_ID} (This Request is used to Update the data of the family by the volunteer by their KEY)
   - ### DELETE Requests
     - 1. /admin/citizen/delete{_ID} (This Request is used to Delete the data of the family by Admin by their KEY)
-
 
 - ## Databases 
   - 1. ONLY SQL DATABASE
@@ -141,8 +134,31 @@ This Repository Handles Backend for Corporator's Application
 
 - ## API's
     ### POST Requests 
-    - 1. /user/add (This Request is used to add the citizen to the ward if the data exits)
-
+    - 1. /user/add (This Request is used to Create an account for the citizen of the ward if the data exits)
 
 - ## Databases 
   - 1. Mongo DB
+
+## 6. Complaints 
+- ## Schema 
+  - ### Complain Schema 
+    - 1. _ID (Custom Genarated)
+    - 2. Title 
+    - 3. Context
+    - 4. Location <Array>
+    - 5. S3 Links <Array>
+    - 6. Status
+    - 7. Timestamp
+
+
+- ## API's
+  - ### GET Requests 
+    - 1. /admin/complaints/getall/completed (This Request is used to fetch all the complaints)
+    - 2. /admin/complaints/getall/active (This Request is used to fetch all the complaints which are active)
+    - 3. /user/complaints/getmycomplaint{_ID} (This Request is used to fetch all the complaints by the individual user)
+  - ### POST Requests 
+    - 1. /user/complaints/makeone (This Request is used to post an complaint by the user)
+    - 2. /admin/complaints/manage (This Request is used to update an complaint by the admin)
+- ## Databases 
+  - 1. Mongo DB
+  - 2. Amazon S3 Bucket (Images and Video's)
