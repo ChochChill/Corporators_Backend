@@ -34,7 +34,7 @@ This Repository Handles Backend for Corporator's Application
 - ## Databases
   - Mongo DB and Firebase.
 
-## 2. News Feed ()
+## 2. News Feed 
 
 - ## Schema 
   - ### News Feed Schema 
