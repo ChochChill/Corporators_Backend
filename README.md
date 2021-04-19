@@ -3,7 +3,7 @@ This Repository Handles Backend for Corporator's Application
 
 
 # Services 
-1. Auth and Authrization 
+1. Auth and Authorization 
 2. News Feed 
 3. Volunteer 
 4. Admin 
@@ -11,7 +11,7 @@ This Repository Handles Backend for Corporator's Application
 6. Complaints
 
 
-## 1. Auth and Authrization  (Apoorva's Headache)
+## 1. Auth and Authorization
 
 - ## Schema 
   - ### Auth User Schema
@@ -29,7 +29,7 @@ This Repository Handles Backend for Corporator's Application
     
 
 - ## API's 
-    - ### Lets just do it according to what we did for babu sir's backend (Apoorva Handle it)
+    - ### 
 
 - ## Databases
   - Mongo DB and Firebase.
