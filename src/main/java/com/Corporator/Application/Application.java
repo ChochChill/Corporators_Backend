@@ -1,4 +1,4 @@
-package com.wma.Corporator.s.Application;
+package com.Corporator.Application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
