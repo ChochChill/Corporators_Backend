@@ -127,13 +127,13 @@ This Repository Handles Backend for Corporator's Application
 ## 5. Complaints 
 - ## Schema 
   - ### Complain Schema 
-    - 1. _ID (Custom Genarated)
-    - 2. Title 
-    - 3. Context
-    - 4. Location <Array>
-    - 5. S3 Links <Array>
-    - 6. Status
-    - 7. Timestamp
+    1. _ID (Custom Genarated)
+    2. Title 
+    3. Context
+    4. Location <Array>
+    5. S3 Links <Array>
+    6. Status
+    7. Timestamp
 
 
 - ## API's
