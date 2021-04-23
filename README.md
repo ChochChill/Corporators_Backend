@@ -138,12 +138,12 @@ This Repository Handles Backend for Corporator's Application
 
 - ## API's
   - ### GET Requests 
-    - 1. /admin/complaints/getall/completed (This Request is used to fetch all the complaints)
-    - 2. /admin/complaints/getall/active (This Request is used to fetch all the complaints which are active)
-    - 3. /user/complaints/getmycomplaint{_ID} (This Request is used to fetch all the complaints by the individual user)
+      1. /admin/complaints/getall/completed (This Request is used to fetch all the complaints)
+      2. /admin/complaints/getall/active (This Request is used to fetch all the complaints which are active)
+      3. /user/complaints/getmycomplaint{_ID} (This Request is used to fetch all the complaints by the individual user)
   - ### POST Requests 
-    - 1. /user/complaints/makeone (This Request is used to post an complaint by the user)
-    - 2. /admin/complaints/manage (This Request is used to update an complaint by the admin)
+      1. /user/complaints/makeone (This Request is used to post an complaint by the user)
+      2. /admin/complaints/manage (This Request is used to update an complaint by the admin)
 - ## Databases 
   - 1. Mongo DB
   - 2. Amazon S3 Bucket (Images and Video's)
