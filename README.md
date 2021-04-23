@@ -106,7 +106,7 @@ This Repository Handles Backend for Corporator's Application
     - 1. /admin/allvolunteers (This Request is used to get all the volunteer that Admin has added)
     - 2. /admin/volunteer/{_ID} (This Request is used to get the volunteer that Admin has added by filter)
     - 3. /admin/getall (This Request is used to get all the families that all the volunteer have been adding) 
-    - 4. /admin/getalldata/{_ID} (This Request is used to filter out the families that this volunteer has added)
+    - 4. /admin/getcitzen/{_ID} (This Request is used to filter out the families that this volunteer has added)
 
   - ### POST Requests 
     - 1. /admin/newspost (Where the Admin can post the article)
