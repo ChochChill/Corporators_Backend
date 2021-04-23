@@ -123,23 +123,8 @@ This Repository Handles Backend for Corporator's Application
 - ## Databases 
   - 1. ONLY SQL DATABASE
 
-## 5. User 
-- ## Schema 
-  - ### User Schema (Overall)
-    - 1. Name 
-    - 2. Phone Number 
-    - 3. Password
-    - 4. Clearance Level 
-    - 5. Data 
 
-- ## API's
-    ### POST Requests 
-    - 1. /user/add (This Request is used to Create an account for the citizen of the ward if the data exits)
-
-- ## Databases 
-  - 1. Mongo DB
-
-## 6. Complaints 
+## 5. Complaints 
 - ## Schema 
   - ### Complain Schema 
     - 1. _ID (Custom Genarated)
